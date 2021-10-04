@@ -1,2 +1,2 @@
 # github
-/--- it is created by terminal--/
+/*--- it is created by terminal--*/
