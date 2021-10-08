@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "dc172453-caa7-4607-9671-0fddba153ce1",
+		"name": "git redhat.portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "html h1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"login-box\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://web-portal",
+					"protocol": "http",
+					"host": [
+						"web-portal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

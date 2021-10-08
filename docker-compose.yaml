@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:  
+
+  web-aciopr:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${PROJECT}
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${PROJECT}.entrypoints=http"
+      - "traefik.http.routers.${PROJECT}.rule=Host(`sawxpv01.ssn.entsvcs.com`) && PathPrefix(`/${PROJECT}{regex:$$|/.*}`)"
+      - "traefik.http.routers.${PROJECT}.middlewares=${PROJECT}-stripprefix"
+      - "traefik.http.middlewares.${PROJECT}-stripprefix.stripprefix.prefixes=/${PROJECT}/"
+      - "traefik.http.services.${PROJECT}.loadbalancer.server.port=80"
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true

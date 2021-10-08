@@ -1,0 +1,20 @@
+{
+  "name": "newman-test",
+  "version": "1.0.0",
+  "description": "newman-test",
+  "scripts": {
+    "api-tests": "newman run postman_collection.json --reporters cli,junit --reporter-junit-export newman.xml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.dxc.com/lpastva/lpastva.git"
+  },
+  "author": "lpastva",
+  "dependencies": {
+    "newman": "^3.5.2"
+  },
+  "bugs": {
+    "url": "https://github.dxc.com/lpastva/lpastva/issues"
+  },
+  "homepage": "https://github.dxc.com/lpastva/lpastva"
+}
