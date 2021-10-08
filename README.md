@@ -1,4 +1,4 @@
-### Hi there 👋 lpastva / pastva@dxc.com / 60071295 here!
+### Hi there 👋 amalleswaram / avula.malleswaramma@dxc.com / 11704697 here!
 
 - 🔭 I’m currently working on ... SRA, SRA modernization, DXC platform X
 - 🌱 I’m currently learning ... Prometheus, Grafana
@@ -6,7 +6,7 @@
 - 🤔 I’m looking for help with ... AWX on Subdrectory :lol:
 - 😄 Pronouns ... He/Him
 - 💬 Ask me about ... Anything!
-- 📫 How to reach me ... pastva@dxc.com
+- 📫 How to reach me ...  avula.malleswaramma@dxc.com
 - ⚡ Fun fact ... I learn a tech a day!
 
 ## All my Repos are under our [ACIOPR team page here]
